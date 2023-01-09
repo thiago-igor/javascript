@@ -9,6 +9,10 @@ body{
     background-image: linear-gradient(to right, #05E8F6, #2005F6);
 }
 
+div#res{
+    margin-top: 20px;
+}
+
 main{
     background-color: white;
     border-radius: 10px;
