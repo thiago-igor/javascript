@@ -5,6 +5,7 @@
 body{
     background-image: linear-gradient(to right, rgb(151, 151, 231), rgb(55, 55, 119));
     text-align: center;
+    
 }
 
 header{
@@ -18,6 +19,10 @@ section{
     width:700px;
     margin: auto;
     box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.555);
+}
+
+div#res{
+    margin-top: 30px;
 }
 
 footer{
