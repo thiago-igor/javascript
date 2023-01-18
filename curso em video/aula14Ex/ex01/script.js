@@ -11,6 +11,10 @@ function calcular() {
         let i = Number(ini.value)
         let f = Number(fim.value)
         let p = Number(passo.value)
+        if(p<=0){
+            alert("Passo Inválido. Considerando PASSO = 1")
+            p = 1
+        }
         if(i < f){
             //contagem crescente
             for (let c=i; c <= f; c += p) {
