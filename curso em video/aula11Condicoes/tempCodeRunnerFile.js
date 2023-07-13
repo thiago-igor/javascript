@@ -1,0 +1,1 @@
+console.log(`A velocidade do seu carro é de ${vel} km/h`)
