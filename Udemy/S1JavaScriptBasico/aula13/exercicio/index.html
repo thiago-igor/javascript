@@ -8,20 +8,14 @@
     <script>
         const nome = prompt('Digite seu nome:')
 
-        document.body.innerHTML += `Seu Nome é: ${nome} <br/>`;
-        document.body.innerHTML += `Seu nome tem ${tamanho} Letras <br/>`;
-        document.body.innerHTML += `A Segunda letra do seu nome é: ${index2}<br />`;
-        document.body.innerHTML += `Qual o primeiro indice da letra 'o' no seu nome? ${}<br />`;
-        document.body.innerHTML += `Qual o ultimo indice da letra "t" no seu nome?  ${}<br />`;
-        document.body.innerHTML += `As palavras do seu nome são: ${} <br />`;
-        document.body.innerHTML += `Seu nome com letras Maiusculas: ${} <br />`;
-        document.body.innerHTML += `Seu nome com letras minusculas: ${} <br />`;
-        
-
-        // Funções:
-        const tamanho = nome.length
-
-        const index2 = nome[1]
+        document.body.innerHTML = `Seu Nome é: ${nome} <br/>`;
+        document.body.innerHTML += `A segunda letra do seu nome é: ${nome[1]} <br/>`
+        document.body.innerHTML += `O tamanho do seu nome é de ${nome.length} letras <br/>`
+        document.body.innerHTML += `Qual o primeiro indice da letra 'a' ? ${nome.indexOf('a')} <br/>`
+        document.body.innerHTML += `Qual o primeiro indice que a letra 't' aparece de tras para frente? ${nome.lastIndexOf('t')} <br/>`
+        document.body.innerHTML += `As palavras do seu nome sao: ${nome.split(' ')} <br/>`
+        document.body.innerHTML += `Seu nome com letras Maiusculas: ${nome.toUpperCase()} <br />`
+        document.body.innerHTML += `Seu nome com letras minusculas: ${nome.toLowerCase()} <br />`        
 
     </script>
 </body>
