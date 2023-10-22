@@ -1,8 +1,8 @@
 let num1 = 9.54587
 
-let num2 = Math.floor(num1); // Arredonda para cima
+let num2 = Math.floor(num1); // Arredonda para baixo
 
-let num3 = Math.ceil(num1); // Arredonda para baixo
+let num3 = Math.ceil(num1); // Arredonda para cima
 
 let num4 = Math.round(num1); // arredonda para o mais prox
 

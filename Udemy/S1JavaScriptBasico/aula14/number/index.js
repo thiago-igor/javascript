@@ -21,6 +21,6 @@ let soma = num3 + num4
 console.log(soma) // imprecisao
 
 soma = parseFloat(soma.toFixed(2)) // conta precisa 
-console.log(soma)
+console.log(soma) 
 
 
