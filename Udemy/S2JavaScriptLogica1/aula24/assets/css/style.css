@@ -59,11 +59,11 @@ form button:hover {
     background: var(--primay-color-darker);
 }
 
-table{
-    border:"0";
-    width:"100%";
+.paragrafo-resultado , .bad{
+    background: #3bda5e;
+    padding: 10px 20px;
 }
 
-table td{
-    width: 70%;
+.bad{
+    background: rgb(226, 123, 123);
 }
