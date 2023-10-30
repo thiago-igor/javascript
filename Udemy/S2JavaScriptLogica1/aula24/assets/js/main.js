@@ -3,11 +3,11 @@
 const form = document.querySelector('#formulario')
 
 form.addEventListener('submit', function(e){ // nao recarrega a pag quando enviamos o formulario e sim guarda as informações 
-    e.preventDefault();
+    e.preventDefault(); // nao deixa o formulario ser enviado
     const inputPeso = e.target.querySelector('#peso') //'e.target' = Da onde esta vindo esse evento
     const inputAltura = e.target.querySelector('#altura')
 
-    const peso = Number(inputPeso.value);
+    const peso = Number(inputPeso.value); // transformando string em Number
     const altura = Number(inputAltura.value);
 
     if (!peso) { // se peso nao for verdadeiro
