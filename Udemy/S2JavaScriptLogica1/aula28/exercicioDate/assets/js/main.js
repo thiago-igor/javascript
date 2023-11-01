@@ -2,7 +2,7 @@ const dat = document.querySelector('.dataH1');
 
 function diaAtual(dat) {
     const data = new Date();
-    const dia = data.getDay();
+    const dia = data.getDate();
     const mes = data.getMonth();
     const ano = data.getFullYear();
     const hora = data.getHours();
@@ -10,25 +10,25 @@ function diaAtual(dat) {
     
     switch (dia) {
         case 0:
-            dat.innerHTML = `Domingo, ${dia}`
+            dat.innerHTML = `Domingo, ${dia} de `
             break;
         case 1:
-            dat.innerHTML = `Segunda-Feira, ${dia}`
+            dat.innerHTML = `Segunda-Feira, ${dia} de `
             break;
         case 2:
-            dat.innerHTML = `Terça-Feira, ${dia} de`
+            dat.innerHTML = `Terça-Feira, ${dia} de `
             break;
         case 3:
-            dat.innerHTML = `Quarta-Feira, ${dia} de`
+            dat.innerHTML = `Quarta-Feira, ${dia} de `
             break;
         case 4:
-            dat.innerHTML = `Quinta-Feira, ${dia} de`
+            dat.innerHTML = `Quinta-Feira, ${dia} de `
             break;
         case 5:
-            dat.innerHTML = `Sexta-Feira, ${dia} de`
+            dat.innerHTML = `Sexta-Feira, ${dia} de `
             break;
         case 6:
-            dat.innerHTML = `Sábado, ${dia} de`
+            dat.innerHTML = `Sábado, ${dia} de `
             break;
         default:
             break;
@@ -36,48 +36,41 @@ function diaAtual(dat) {
 
     switch (mes) {
         case 0:
-            dat.innerHTML += ` de ${ano}  ${hora}:${min}`
-            break;
-        case 0:
-            dat.innerHTML += ` de ${ano}  ${hora}:${min}`
+            dat.innerHTML += `Janeiro de ${ano}  ${hora}:${min}`
             break;
         case 1:
-            dat.innerHTML += ` de ${ano}  ${hora}:${min}`
+            dat.innerHTML += `Fevereiro de ${ano}  ${hora}:${min}`
             break;
         case 2:
-            dat.innerHTML += ` de ${ano}  ${hora}:${min}`
+            dat.innerHTML += `Março de ${ano}  ${hora}:${min}`
             break;
-            case 0:
-            dat.innerHTML += ` de ${ano}  ${hora}:${min}`
-                break;
-            case 3:
-            dat.innerHTML += ` de ${ano}  ${hora}:${min}`
+        case 3:
+            dat.innerHTML += `Abril de ${ano}  ${hora}:${min}`
             break;
         case 4:
-            dat.innerHTML += ` de ${ano}  ${hora}:${min}`
+            dat.innerHTML += `Maio de ${ano}  ${hora}:${min}`
             break;
         case 5:
-            dat.innerHTML += ` de ${ano}  ${hora}:${min}`
+            dat.innerHTML += `Junho de ${ano}  ${hora}:${min}`
             break;
         case 6:
-            dat.innerHTML += ` de ${ano}  ${hora}:${min}`
+            dat.innerHTML += `Julho de ${ano}  ${hora}:${min}`
             break;
         case 7:
-            dat.innerHTML += ` de ${ano}  ${hora}:${min}`
+            dat.innerHTML += `Agosto de ${ano}  ${hora}:${min}`
             break;
         case 8:
-            dat.innerHTML += ` de ${ano}  ${hora}:${min}`
+            dat.innerHTML += `Setebro de ${ano}  ${hora}:${min}`
             break;
         case 9:
             dat.innerHTML += `Outubro de ${ano}  ${hora}:${min}`
             break;
         case 10:
-            dat.innerHTML += ` de ${ano}  ${hora}:${min}`
+            dat.innerHTML += `Novembro de ${ano}  ${hora}:${min}`
             break;
         case 11:
-            dat.innerHTML += ` de ${ano}  ${hora}:${min}`
+            dat.innerHTML += `Dezembro de ${ano}  ${hora}:${min}`
             break;
-    
         default:
             break;
     }
