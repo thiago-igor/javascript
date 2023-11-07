@@ -58,3 +58,11 @@ form button{
 form button:hover {
     background: var(--primay-color-darker);
 }
+
+.relogio{
+    font-size: 3em;
+}
+
+.pausado{
+    color: red;
+}

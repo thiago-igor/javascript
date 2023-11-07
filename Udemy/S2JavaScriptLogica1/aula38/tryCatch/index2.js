@@ -24,7 +24,7 @@ function retornaHora(data) {
 }
 
 try{
-    const data = new Date('01-01-1970 12:50:00')
+    const data = new Date('01-01-1970 00:00:00')
     const hora = retornaHora(data);
     console.log(hora);
 }catch{
