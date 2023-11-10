@@ -71,7 +71,7 @@ function adicionaTarefasSalvas() {
     console.log(listaDeTarefas);
 
     for(let tarefa of listaDeTarefas){
-        criaTarefa(tarefa);
+        criaTarefa(tarefa); 
     }
 }
 
