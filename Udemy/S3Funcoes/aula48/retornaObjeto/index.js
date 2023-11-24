@@ -4,8 +4,14 @@ function criaPessoa(nome, sobrenome, altura, peso) {
         nome, // obj separado por virgulas
         sobrenome,
         nomeCompleto(){ // função dentro do obj
-            return `${nome} ${sobrenome}`
+            return `${this.nome} ${this.sobrenome}`
         },
+        // Setter:
+       set nomeCompleto2(valor){
+            valor = valor.split(' '); // cria um arrey com cada palavra
+            this.nome = valor.shift(); // exclui o primeiro do array
+            console.log(valor)
+       },
         fala(assunto){ // função dentro do obj
             return `${nome} esta falando ${assunto}`;
         },
@@ -25,8 +31,8 @@ console.log(p1.nomeCompleto()) // parenteses por ser função
 console.log(p1.imc) // sem parenteses por ta imitando um atributo com o 'get'
 
 const p2 = criaPessoa('Maria', 'Oliva', 2.01, 100);
-console.log(p2.nomeCompleto())
-console.log(p2.imc)
+p2.nomeCompleto2 = 'Luiz Oliveira Maia';
+
 
 
 // Função construtoras:
