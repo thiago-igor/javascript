@@ -34,5 +34,3 @@ const p2 = criaPessoa('Maria', 'Oliva', 2.01, 100);
 p2.nomeCompleto2 = 'Luiz Oliveira Maia';
 
 
-
-// Função construtoras:
