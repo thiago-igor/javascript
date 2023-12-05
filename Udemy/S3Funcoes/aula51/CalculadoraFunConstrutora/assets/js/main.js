@@ -4,12 +4,14 @@ function Calculadora(){
     this.inicia = () => { // Usando Arrow function
         this.capturaCliques();
         this.capturaEnter();
+        this.display.focus(); // Quando inicia o curso vai para o display
     };
 
     this.capturaEnter = () => {
-        document.addEventListener('keyup', e => { //keyup: soltando a tecla
-            if(keyCode !== 13) return;
-            this.realizaConta();
+        this.display.addEventListener('keypress', e => { //keyup: soltando a tecla
+            if(e.keyCode === 13){
+                this.realizaConta();
+            }
         })
     }
     
@@ -27,9 +29,12 @@ function Calculadora(){
 
     };
 
-    this.addNumDisplay = (el) =>  this.display.value += el.innerText; // Arrow function sem "{}" pois temos so uma linha 
+    this.addNumDisplay = (el) => {
+     this.display.value += el.innerText;
+     this.display.focus(); // voltando foco para o display
+    }
     
-    this.clear = () => this.display.value = this.display.value = '';
+    this.clear = () => this.display.value = this.display.value = ''; // Arrow function sem "{}" pois temos so uma linha 
     
     this.del = () => this.display.value = this.display.value.slice(0, -1); // String - 1
 
