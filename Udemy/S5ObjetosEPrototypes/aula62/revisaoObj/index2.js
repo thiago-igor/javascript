@@ -20,8 +20,13 @@ function Pessoa(nome, sobrenome){
     this.sobrenome = sobrenome;
 } 
 
+// O que 'new' faz: { } <- this   (_cria o obj e atrela palavra this a ele. Nesse caso this = p2)
 const p2 = new Pessoa('Thiago', 'Igor');
+
+//Já aqui, this se refere a p3, e assim por diante
+const p3 = new Pessoa('Sabrina', 'Ellyza');
 console.log(p2);
+console.log(p3);
 
 
 
