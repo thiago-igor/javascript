@@ -19,4 +19,4 @@ const pessoa1 = new Pessoa('Luiz', 'Henrrique.');
 console.log(pessoa1.nomeCompleto());
 
 //OBS:
-// Pessoa.prototype === pessoa1._proto_
+// Pessoa.prototype === pessoa1.__proto__
